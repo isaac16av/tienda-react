@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/shared/Header';
+import Lista from './components/Lista';
+import Carrito from './components/Carrito';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div className="Lista">
+                <Header />
+
+                <div className='contenido'>
+                    <Route exact path='/' component={Lista} />
+                    <Route exact path='/carrito' component={Carrito} />
+                </div>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
