@@ -2,11 +2,11 @@ import React from 'react';
 import Header from './components/shared/Header';
 import Lista from './components/Lista';
 import Carrito from './components/Carrito';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className="Lista">
                 <Header />
 
@@ -15,7 +15,7 @@ function App() {
                     <Route exact path='/carrito' component={Carrito} />
                 </div>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
