@@ -16,6 +16,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-
-
-// TODO: Remove ts-ingnore and complete readme
