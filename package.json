@@ -1,18 +1,7 @@
 {
-  "name": "tienda-virtual",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://isaac16av.github.io/tienda",
-  "dependencies": {
-    "@material-ui/core": "^4.0.1",
-    "gh-pages": "^2.0.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.0.3",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
-    "redux": "^4.0.1"
-  },
+  "name": "react-vstore",
+  "version": "0.2.0",
+  "private": false,
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
@@ -35,5 +24,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.0",
+    "@types/react-dom": "^16.8.0",
+    "@types/react-router-dom": "^5.3.3",
+    "gh-pages": "^2.0.1",
+    "typescript": "^4.9.5"
   }
 }
